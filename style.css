@@ -1,0 +1,368 @@
+/* =========================
+   DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav {
+    background-color: #333;
+    color: white;
+
+    padding: 15px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.nav h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.nav h2 i {
+    color: #ffc107;
+}
+
+
+/* MENU NAVBAR */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-size: 15px;
+
+    padding: 8px 0;
+
+    transition: 0.3s;
+}
+
+
+/* EFEK SAAT MOUSE DIARAHKAN */
+
+.nav-menu a:hover {
+    color: #ffc107;
+
+    border-bottom: 2px solid #ffc107;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background-color: #fff3cd;
+}
+
+.home h1 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* TOMBOL LIHAT MENU */
+
+.button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #ffc107;
+
+    color: #333;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    padding: 60px 8%;
+}
+
+section > h2 {
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+section > p {
+    text-align: center;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+#menu {
+    background-color: #f5f5f5;
+}
+
+
+/* JUDUL MAKANAN / MINUMAN / DESSERT */
+
+.judul-menu {
+    max-width: 1000px;
+
+    margin: 35px auto 15px;
+
+    font-size: 22px;
+}
+
+
+/* CONTAINER MENU */
+
+.menu-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: 20px auto 35px;
+}
+
+
+/* CARD MENU */
+
+.menu-card {
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+
+/* EFEK CARD */
+
+.menu-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+.menu-card b {
+    color: #c58b00;
+}
+
+
+/* =========================
+   PEMESANAN
+========================= */
+
+#pemesanan {
+    background-color: white;
+}
+
+
+/* ORDERED LIST */
+
+.langkah {
+    max-width: 800px;
+
+    margin: 30px auto;
+
+    padding: 25px 45px;
+
+    background-color: #f5f5f5;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+}
+
+
+/* ISI LANGKAH */
+
+.langkah li {
+    margin-bottom: 15px;
+
+    padding-left: 5px;
+
+    line-height: 1.6;
+}
+
+.langkah li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+#gallery {
+    text-align: center;
+
+    background-color: #f5f5f5;
+}
+
+#gallery video {
+    width: 600px;
+
+    max-width: 100%;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#about {
+    background-color: white;
+
+    text-align: center;
+}
+
+#about p {
+    margin: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-menu a {
+        margin: 5px;
+    }
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home {
+        padding: 70px 20px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+}
