@@ -1,0 +1,331 @@
+/* =========================
+   DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav {
+    background-color: #333;
+    color: white;
+
+    padding: 15px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+.nav h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.nav h2 i {
+    color: #ffc107;
+}
+
+.nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: #ffc107;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background-color: #fff3cd;
+}
+
+.home h1 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    padding: 60px 8%;
+}
+
+section > h2 {
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+section > p {
+    text-align: center;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+#menu {
+    background-color: #f5f5f5;
+}
+
+.menu-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: 20px auto 35px;
+}
+
+#menu > h3 {
+    max-width: 1000px;
+
+    margin: 30px auto 15px;
+}
+
+.menu-card {
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+.menu-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+.menu-card b {
+    color: #c58b00;
+}
+
+
+/* =========================
+   LANGKAH PEMESANAN
+========================= */
+
+#pemesanan {
+    background-color: white;
+}
+
+.order-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: 30px auto 0;
+}
+
+.order-card {
+    width: 180px;
+
+    padding: 20px;
+
+    background-color: #f5f5f5;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.order-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+#gallery {
+    text-align: center;
+
+    background-color: #f5f5f5;
+}
+
+#gallery video {
+    width: 600px;
+
+    max-width: 100%;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#about {
+    background-color: white;
+
+    text-align: center;
+}
+
+#about p {
+    margin: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav a {
+        margin: 5px;
+    }
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home {
+        padding: 70px 20px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .order-card {
+        width: 100%;
+    }
+
+}
